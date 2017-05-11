@@ -1,0 +1,6 @@
+mongoexport -h 127.0.0.1:27017 -d bot_test -c WordFrequencyModel  -o ./WordFrequencyModel.dump
+mongoimport -h ds133321.mlab.com:33321 -d heroku_mv4lmc9n -c WordFrequencyModel -u botClient -p sdfsadfasdfasdfasdfsdafsddsadf --file ./WordFrequencyModel.dump
+
+
+mongoexport -h 127.0.0.1:27017 -d bot_test -c WordSetInfo  -o ./WordSetInfo.dump
+mongoimport -h ds133321.mlab.com:33321 -d heroku_mv4lmc9n -c WordSetInfo -u botClient -p sdfsadfasdfasdfasdfsdafsddsadf --file ./WordSetInfo.dump
