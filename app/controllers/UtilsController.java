@@ -21,4 +21,8 @@ public class UtilsController extends Controller {
         importer.saveToBd();
         return ok("Жив був пес");
     }
+
+    public Result analyzeText(String filePath){
+        return ok("Жив був пес");
+    }
 }
